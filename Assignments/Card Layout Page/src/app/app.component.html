@@ -1,0 +1,58 @@
+<div style="text-align: center;">
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<h1>{{title | uppercase}}</h1>
+<h1>{{salary | currency:"INR":true:'0.2'}}</h1>
+<h1>{{randDate | date:"dd-MM-yy"}}</h1>
+<p>{{project.name}}</p>
+<p>{{project | json}}</p>
+<em class="bi bi-apple">APPLE</em><br>
+<ul>
+  <li *ngFor="let item of products">{{item.name}}</li>
+</ul>
+<button type="button" class="btn btn-primary" (click)="showAlert()">Click me!</button>
+<div [ngSwitch]="inputNo">
+  <div *ngSwitchCase="'1'">One</div>
+  <div *ngSwitchCase="'2'">Two</div>
+  <div *ngSwitchCase="'3'">Three</div>
+</div>
+<div *ngIf="salary>50000">
+  <p>Bonus</p>
+</div>
+<input type="text" #txt />
+<button (click)="showTxt(txt)">Show</button>
+<div>
+  <input type="color" #clr (change)="changeColor(clr)" />
+  <input type="range" min="10" max="72" value="18" #rng (change)="setSize(rng)" />
+  <div [ngStyle]="{color:colorName,'font-size.px':size}">
+    This is sample Text
+  </div>
+</div> -->

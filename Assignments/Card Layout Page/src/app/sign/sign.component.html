@@ -1,0 +1,6 @@
+Username:<input type="text" #name><br>
+Password:<input type="text" #pass><br>
+New Password:<input type="text" #newpass><br>
+<button (click)="f(name, pass, '', 'signup')">Signup</button>
+<button (click)="f(name, pass, '', 'login')">Login</button>
+<button (click)="f(name, pass, newpass, 'reset')">Reset password</button>

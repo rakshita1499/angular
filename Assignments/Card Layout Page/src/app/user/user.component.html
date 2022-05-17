@@ -1,0 +1,14 @@
+<div *ngFor="let u of user">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{u.Name}}</h5>
+      <p class="card-text">{{u.Description}}</p>
+      <em class="bi bi-pencil fa-lg" (click)="EditElement(u.id, name, desc)"></em> |
+      <em class="bi bi-trash3 fa-lg" (click)="DeleteElement(u.id)"></em>
+    </div>
+  </div>
+</div>
+
+Name:<input type="text" #name><br>
+Description:<input type="text" #desc><br>
+<button (click)="AddElement(name, desc)">Submit</button>
